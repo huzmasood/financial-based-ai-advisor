@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export function SignIn() {
   return (
-    <Card className="mx-auto max-w-sm w-3/12">
+    <Card className="mx-auto max-w-sm">
       <CardHeader className="space-y-1">
         <CardTitle className="text-2xl font-bold">Login</CardTitle>
         <CardDescription>Enter your email and password to login.</CardDescription>
