@@ -17,12 +17,12 @@ export function convertData(originalData, searchValue) {
     if (!uniqueNames.has(name)) {
       uniqueNames.add(name);
       acc = [
-        ...acc,
         {
           name: name,
           [searchValue]: item[1],
           Volume: item[2]
-        }
+        },
+        ...acc
       ];
     }
 
