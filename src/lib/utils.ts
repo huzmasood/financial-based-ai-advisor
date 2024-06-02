@@ -7,18 +7,18 @@ export function cn(...inputs: ClassValue[]) {
 
 // @ts-ignore
 export function convertData(originalData, searchValue) {
-  const uniqueNames = new Set();
+  const uniqueTime = new Set();
   // @ts-ignore
   const convertedData = originalData.reduce((acc, item) => {
     const timestamp = item[0];
     const hour = new Date(timestamp * 1000).toLocaleString('en-US', {hour: 'numeric', hour12: true}); // Convert timestamp to hour with locale formatting
-    const name = hour;
+    const time = hour;
 
-    if (!uniqueNames.has(name)) {
-      uniqueNames.add(name);
+    if (!uniqueTime.has(time)) {
+      uniqueTime.add(time);
       acc = [
         {
-          name: name,
+          time: time,
           [searchValue]: item[1],
           Volume: item[2]
         },
