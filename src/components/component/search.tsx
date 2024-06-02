@@ -11,7 +11,7 @@ export function Search({ onSearchChange }: any) {
   };
 
   return (
-    <div className="flex items-center p-2 bg-white dark:bg-gray-800 rounded-lg shadow">
+    <div className="flex items-center p-2 bg-white dark:bg-gray-800 rounded-lg shadow mb-2">
       <Input
         className="flex-1 text-gray-900 dark:text-white bg-transparent border-none focus:ring-0"
         placeholder="Search..."

@@ -10,7 +10,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-import CustomTooltip from "../ui/customTooltip";
+import CustomTooltip from "../ui/custom-tooltip";
 
 export default function Chart({ searchValue }: any) {
   const cachedSearchValue = useMemo(() => searchValue, [searchValue]);
