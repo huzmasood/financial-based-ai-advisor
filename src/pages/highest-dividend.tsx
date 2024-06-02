@@ -14,6 +14,7 @@ export async function getServerSideProps() {
   // Modify the DOM as needed
   const header = document.querySelector('#header');
   if (header) {
+    // @ts-ignore
     header.style.display = 'none';
   }
 
@@ -29,7 +30,7 @@ export async function getServerSideProps() {
 const DividendYieldStocksPage: React.FC<{ data: string }> = ({ data }) => {
   return (
     <div>
-      <TableIframe data={data} />
+      <TableIframe />
     </div>
   );
 };

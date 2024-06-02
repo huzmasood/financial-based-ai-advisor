@@ -12,11 +12,11 @@ export async function getServerSideProps() {
   const { document } = dom.window;
 
   // Modify the DOM as needed
-  const header = document.querySelector('#header');
-  if (header) {
-    // @ts-ignore
-    header.style.display = 'none';
-  }
+  // const header = document.querySelector('#header');
+  // if (header) {
+  //   // @ts-ignore
+  //   header.style.display = 'none';
+  // }
 
   const processedHtml = dom.serialize();
 
