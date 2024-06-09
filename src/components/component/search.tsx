@@ -5,7 +5,7 @@ export function Search({ onSearchChange }: any) {
   const [searchValue, setSearchValue] = useState("SHEL");
 
   const handleInputChange = (event: any) => {
-    const value = event.target.value;
+    const value = event.target.value.toUpperCase();
     setSearchValue(value);
     onSearchChange(value);
   };

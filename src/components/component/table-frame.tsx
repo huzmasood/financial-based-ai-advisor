@@ -50,7 +50,7 @@ const TableIframe: React.FC = () => {
 
   return (
     <div>
-      <div className="absolute top-0 left-0 w-full h-32 bg-white z-50"></div>
+      <div className="absolute top-0 left-0 w-full h-36 bg-white z-50"></div>
       <div style={{ width: '100%', height: '600px', overflow: 'auto' }}>
         <iframe 
           ref={iframeRef}
